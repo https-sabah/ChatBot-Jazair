@@ -4,7 +4,7 @@ url = "https://copilot5.p.rapidapi.com/copilot"
 
 session = requests.Session()
 session.headers.update({
-    "x-rapidapi-key": "769b502c36msh70a6926047f2379p107df1jsn4337141c8485",
+    "x-rapidapi-key": "769b502c36msh70a6926047f2379p107df1jsn4337141345",
     "x-rapidapi-host": "copilot5.p.rapidapi.com",
     "Content-Type": "application/json"
 })
@@ -24,3 +24,4 @@ while True:
     response = session.post(url, json=payload)
     data = response.json()
     print("Jazair: ", data["data"]["message"])
+
